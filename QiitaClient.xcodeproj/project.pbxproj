@@ -13,6 +13,8 @@
 		BFC77E361C32C32A00970B62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC77E341C32C32A00970B62 /* Main.storyboard */; };
 		BFC77E381C32C32A00970B62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC77E371C32C32A00970B62 /* Assets.xcassets */; };
 		BFC77E3B1C32C32A00970B62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC77E391C32C32A00970B62 /* LaunchScreen.storyboard */; };
+		BFC77E431C32C43300970B62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC77E421C32C43300970B62 /* Images.xcassets */; };
+		BFC77E471C32C9B400970B62 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BFC77E461C32C9B400970B62 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BFC77E371C32C32A00970B62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFC77E3A1C32C32A00970B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFC77E3C1C32C32A00970B62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC77E421C32C43300970B62 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BFC77E461C32C9B400970B62 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				BFC77E371C32C32A00970B62 /* Assets.xcassets */,
 				BFC77E391C32C32A00970B62 /* LaunchScreen.storyboard */,
 				BFC77E3C1C32C32A00970B62 /* Info.plist */,
+				BFC77E421C32C43300970B62 /* Images.xcassets */,
+				BFC77E461C32C9B400970B62 /* .gitignore */,
 			);
 			path = QiitaClient;
 			sourceTree = "<group>";
@@ -126,7 +132,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC77E471C32C9B400970B62 /* .gitignore in Resources */,
 				BFC77E3B1C32C32A00970B62 /* LaunchScreen.storyboard in Resources */,
+				BFC77E431C32C43300970B62 /* Images.xcassets in Resources */,
 				BFC77E381C32C32A00970B62 /* Assets.xcassets in Resources */,
 				BFC77E361C32C32A00970B62 /* Main.storyboard in Resources */,
 			);

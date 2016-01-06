@@ -15,14 +15,18 @@ class ViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
+        // すべてタブ
         allTabView = AllTabViewController()
-        feedTabView = FeedTabViewController()
-        
         allTabView.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Search, tag: 1)
-        feedTabView.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Bookmarks, tag: 2)
+        let allNavigationController = UINavigationController(rootViewController: allTabView)
         
-        self.setViewControllers([allTabView, feedTabView], animated: false)
+        // フィードタブ
+        feedTabView = FeedTabViewController()
+        feedTabView.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Bookmarks, tag: 2)
+        let feedNavigationController = UINavigationController(rootViewController: feedTabView)
+        
+        self.setViewControllers([allNavigationController, feedNavigationController], animated: false)
     }
     
     override func didReceiveMemoryWarning() {

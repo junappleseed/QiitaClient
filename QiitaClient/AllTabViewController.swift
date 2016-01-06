@@ -13,16 +13,18 @@ class AllTabViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initLabel()
+        
+        self.title = "すべて"
     }
     
-    func initLabel(){
+    func initLabel() {
         let size: CGSize = UIScreen.mainScreen().bounds.size
         let label: UILabel = UILabel(frame: CGRectMake(size.width / 2 - 100, size.height / 2 - 15, 200, 30))
         
         label.text = "すべて"
         label.textAlignment = NSTextAlignment.Center
         label.textColor = UIColor.whiteColor()
-        label.backgroundColor = UIColor.orangeColor()
+        label.backgroundColor = UIColor.greenColor()
         
         self.view.addSubview(label)
     }

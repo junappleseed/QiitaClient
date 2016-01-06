@@ -8,26 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITabBarController {
+    
+    var allTabView: AllTabViewController!
+    var feedTabView: FeedTabViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.initLabel()
+    
+        allTabView = AllTabViewController()
+        feedTabView = FeedTabViewController()
+        
+        allTabView.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Search, tag: 1)
+        feedTabView.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Bookmarks, tag: 2)
+        
+        self.setViewControllers([allTabView, feedTabView], animated: false)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    func initLabel(){
-        let size: CGSize = UIScreen.mainScreen().bounds.size
-        let label: UILabel = UILabel(frame: CGRectMake(size.width / 2 - 100, size.height / 2 - 15, 200, 30))
-        
-        label.text = "Hello World!"
-        label.textAlignment = NSTextAlignment.Center
-        label.textColor = UIColor.whiteColor()
-        label.backgroundColor = UIColor.orangeColor()
-        
-        self.view.addSubview(label)
-    }
+    
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF01545B1C3D575F006A6E9C /* AllTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01545A1C3D575F006A6E9C /* AllTabViewController.swift */; };
+		BF01545D1C3D5CEF006A6E9C /* FeedTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01545C1C3D5CEF006A6E9C /* FeedTabViewController.swift */; };
 		BF0CF70C1C3A3EF60048FC69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0CF70B1C3A3EF60048FC69 /* ViewController.swift */; };
 		BFC77E2F1C32C32A00970B62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC77E2E1C32C32A00970B62 /* AppDelegate.swift */; };
 		BFC77E381C32C32A00970B62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC77E371C32C32A00970B62 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF01545A1C3D575F006A6E9C /* AllTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllTabViewController.swift; sourceTree = "<group>"; };
+		BF01545C1C3D5CEF006A6E9C /* FeedTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTabViewController.swift; sourceTree = "<group>"; };
 		BF0CF70B1C3A3EF60048FC69 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFC77E2B1C32C32A00970B62 /* QiitaClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC77E2E1C32C32A00970B62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 				BFC77E3C1C32C32A00970B62 /* Info.plist */,
 				BFC77E461C32C9B400970B62 /* .gitignore */,
 				BF0CF70B1C3A3EF60048FC69 /* ViewController.swift */,
+				BF01545A1C3D575F006A6E9C /* AllTabViewController.swift */,
+				BF01545C1C3D5CEF006A6E9C /* FeedTabViewController.swift */,
 			);
 			path = QiitaClient;
 			sourceTree = "<group>";
@@ -133,7 +139,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF0CF70C1C3A3EF60048FC69 /* ViewController.swift in Sources */,
+				BF01545D1C3D5CEF006A6E9C /* FeedTabViewController.swift in Sources */,
 				BFC77E2F1C32C32A00970B62 /* AppDelegate.swift in Sources */,
+				BF01545B1C3D575F006A6E9C /* AllTabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

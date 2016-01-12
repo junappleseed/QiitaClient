@@ -31,12 +31,11 @@ class AllTabViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         self.view.addSubview(tableView)
         
-        self.getArticles()
+        self.updateTable()
     }
     
-    func getArticles() {
-        let url = "https://qiita.com/api/v2/items"
-        Alamofire.request(.GET, url, parameters: ["per_page": "100"])
+    func updateTable() {
+        Alamofire.request(.GET, "https://qiita.com/api/v2/items", parameters: ["per_page": "100"])
         .responseJSON { response in
             guard let object = response.result.value else {
                 self.showAlertMessage()

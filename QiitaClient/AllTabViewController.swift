@@ -35,7 +35,7 @@ class AllTabViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func updateTable() {
-        Alamofire.request(.GET, "https://qiita.com/api/v2/items", parameters: ["per_page": "100"])
+        Alamofire.request(.GET, "https://qiita.com/api/v2/items", parameters: ["per_page": "20"])
         .responseJSON { response in
             guard let object = response.result.value else {
                 self.showAlertMessage()

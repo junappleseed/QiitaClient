@@ -19,19 +19,20 @@ class AllTabViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
         
         self.title = "すべて"
+
+        self.tableViewSetting()
+        self.updateTable()
+    }
+    
+    func tableViewSetting() {
+        self.tableView = UITableView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
         
-        let displayWidth: CGFloat = self.view.frame.width
-        let displayHeight: CGFloat = self.view.frame.height
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
         
-        tableView = UITableView(frame: CGRect(x: 0, y: 0, width: displayWidth, height: displayHeight))
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
-        
-        tableView.dataSource = self
-        tableView.delegate = self
+        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
         
         self.view.addSubview(tableView)
-        
-        self.updateTable()
     }
     
     func updateTable() {
@@ -45,7 +46,7 @@ class AllTabViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let json = JSON(object)
             json.forEach { (_, json) in
                 let article: [String: String?] = [
-                    "title": json["title"].string,
+                    "title": json["title"].string
                 ]
                 self.articles.append(article)
             }

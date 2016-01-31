@@ -12,7 +12,7 @@ class FeedTabViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.initLabel()
+        initLabel()
         
         self.title = "フィード"
     }

@@ -20,17 +20,17 @@ class AllTabViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         self.title = "すべて"
 
-        self.tableViewSetting()
-        self.updateTable()
+        tableViewSetting()
+        updateTable()
     }
     
     func tableViewSetting() {
-        self.tableView = UITableView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
+        tableView = UITableView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
         
-        self.tableView.dataSource = self
-        self.tableView.delegate = self
+        tableView.dataSource = self
+        tableView.delegate = self
         
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
+        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
         
         self.view.addSubview(tableView)
     }

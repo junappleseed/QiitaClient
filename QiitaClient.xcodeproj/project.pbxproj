@@ -72,12 +72,12 @@
 			isa = PBXGroup;
 			children = (
 				BFC77E2E1C32C32A00970B62 /* AppDelegate.swift */,
-				BFC77E371C32C32A00970B62 /* Assets.xcassets */,
-				BFC77E3C1C32C32A00970B62 /* Info.plist */,
-				BFC77E461C32C9B400970B62 /* .gitignore */,
 				BF0CF70B1C3A3EF60048FC69 /* ViewController.swift */,
 				BF01545A1C3D575F006A6E9C /* AllTabViewController.swift */,
 				BF01545C1C3D5CEF006A6E9C /* FeedTabViewController.swift */,
+				BFC77E371C32C32A00970B62 /* Assets.xcassets */,
+				BFC77E3C1C32C32A00970B62 /* Info.plist */,
+				BFC77E461C32C9B400970B62 /* .gitignore */,
 			);
 			path = QiitaClient;
 			sourceTree = "<group>";
